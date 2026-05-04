@@ -1,9 +1,15 @@
 # Rokid HA HUD
 
+
+> **🔵 Connectivity Update — May 2025**
+> The glasses connection has been migrated from **raw TCP sockets** to
+> **Bluetooth via the Rokid AI glasses SDK** (`pod 'RokidSDK' ~> 1.10.2`).
+> No Wi-Fi port forwarding is needed. See **SDK Setup** below.
+
 iOS app that connects to **Home Assistant** via WebSocket and streams live entity state to **Rokid AR glasses** (TCP) as a heads-up display.
 
 ```
-Home Assistant ──WS :8123──▶ iPhone (RokidHA) ──TCP :8091──▶ Rokid Glasses
+Home Assistant ──WS :8123──▶ iPhone (RokidHA) ──Bluetooth/RokidSDK──▶ Rokid Glasses
 ```
 
 ## What's displayed

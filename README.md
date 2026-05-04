@@ -62,7 +62,7 @@ The only thing left for each app is filling in the three credential constants (`
 
 ## Setup
 
-1. Open `RokidHA.xcodeproj` in Xcode 15+.
+1. Open `RokidHA.xcworkspace` in Xcode 15+ (after running `pod install`) 15+.
 2. Set your team in Signing & Capabilities.
 3. Build and run on iPhone (iOS 17+).
 4. Grant local network permission when prompted.
@@ -108,4 +108,4 @@ Entities with **alert on change** enabled push an immediate notification to the 
 - Xcode 15+
 - Home Assistant instance (any version with WebSocket API)
 - Long-lived access token from HA user profile
-- Rokid AR glasses on the same Wi-Fi network (optional — app works standalone)
+- Rokid AI glasses (paired via Bluetooth — no Wi-Fi needed) network (optional — app works standalone)
